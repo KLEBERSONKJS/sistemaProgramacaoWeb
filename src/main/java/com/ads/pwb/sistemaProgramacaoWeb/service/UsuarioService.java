@@ -22,4 +22,11 @@ public class UsuarioService {
         usuarioRepository.save(usuario);
         return usuario;
     }
+
+    public Boolean autenticar(Usuario usuario){
+        if(usuarioRepository.findAll().contains(usuario)){
+            return true;
+        }
+        return false;
+    }
 }

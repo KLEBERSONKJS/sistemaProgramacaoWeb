@@ -26,4 +26,9 @@ public class UsuarioController {
         usuarioService.cadastrar(usuario);
         return "Usuario cadastrador";
     }
+
+    @GetMapping("/login")
+    public String autentticarUsuario(@RequestBody Usuario usuario){
+        return usuarioService.autenticar(usuario).toString();
+    }
 }

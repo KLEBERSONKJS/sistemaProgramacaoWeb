@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+
+<body>
+    <h1 Faca Login></h1>
+
+    <form id="loginUsuario">
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="Nome" required><br><br>
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="Senha" required><br><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <div id="feedback"></div>
+
+    <script>
+        document.getElementById('formCadastro').addEventListener('submit', function (event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Captura os dados do formulário
+            const usarioData = {
+                nome: document.getElementById('nome').value,
+                senha: document.getElementById('senha').value,
+            };
+
+
+            fetch('http://localhost:8080/usuarios/cadastrar', {
+                method: 'Post',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(usarioData),
+
+            })
+
+                .then(response => response.text())
+                .then(data => {
+                    // Exibe mensagem de sucesso ou erro
+                    const feedback = document.getElementById('feedback');
+                    feedback.textContent = data;  // Mostra a resposta do servidor
+                    feedback.style.color = "green";  // Cor verde para sucesso
+                })
+                .catch(error => {
+                    console.error('Erro ao cadastrar pessoa:', error);
+                    const feedback = document.getElementById('feedback');
+                    feedback.textContent = "Erro ao cadastrar pessoa. Tente novamente.";  // Mensagem de erro
+                    feedback.style.color = "red";  // Cor vermelha para erro
+                });
+
+        });
+    </script>
+
+</body>
+
+</html>
