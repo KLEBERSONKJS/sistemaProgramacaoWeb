@@ -29,4 +29,15 @@ public class UsuarioService {
         }
         return false;
     }
+
+    public Usuario deletar(Usuario usuarioDeletado){
+
+        try {
+            usuarioRepository.deleteById(usuarioDeletado.getId());
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+        return usuarioDeletado;
+    }
+
 }

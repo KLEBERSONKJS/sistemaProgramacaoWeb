@@ -1,8 +1,9 @@
 package com.ads.pwb.sistemaProgramacaoWeb.controller;
 
 import com.ads.pwb.sistemaProgramacaoWeb.model.Usuario;
-import com.ads.pwb.sistemaProgramacaoWeb.repository.UsuarioRepository;
+import com.ads.pwb.sistemaProgramacaoWeb.record.DadosCadastroUsuario;
 import com.ads.pwb.sistemaProgramacaoWeb.service.UsuarioService;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,19 +17,26 @@ public class UsuarioController {
     @Autowired
     UsuarioService usuarioService;
 
-    @GetMapping("/all")
+    @GetMapping
     public List<Usuario> listarUsuarios(){
         return usuarioService.listarPessoas();
     }
 
-    @PostMapping("/cadastro")
-    public String cadastrarUsuario(@RequestBody Usuario usuario){
-        usuarioService.cadastrar(usuario);
+    @PostMapping
+    @Transactional
+    public String cadastrarUsuario(@RequestBody DadosCadastroUsuario dadosCadastroUsuario){
+        usuarioService.cadastrar(new Usuario(dadosCadastroUsuario));
         return "Usuario cadastrador";
     }
 
-    @GetMapping("/login")
-    public String autentticarUsuario(@RequestBody Usuario usuario){
-        return usuarioService.autenticar(usuario).toString();
+    @DeleteMapping
+    @Transactional
+    public String deletarUsuario(@RequestBody DadosCadastroUsuario dadosCadastroUsuario){
+        try {
+            usuarioService.deletar(new Usuario(dadosCadastroUsuario));
+            return "Usuario Deletado";
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
