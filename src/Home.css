@@ -1,0 +1,70 @@
+body {
+    background-color: blueviolet;
+    margin: 0;
+}
+
+img {
+    width: 5rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 100px;
+}
+
+button {
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem;
+}
+
+section {
+    padding: 20px;
+  }
+  
+.categories {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+  }
+
+.category {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.category img {
+    margin-top: 10px;
+    width: 100px; 
+    height: 100px; 
+}
+
+.Imagem { 
+    display: flex; 
+    justify-content: center; 
+    height: 50vh;
+  }
+
+.Imagem img {
+    width: 90%;
+    max-width: 1400px;  
+}
