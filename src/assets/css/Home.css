@@ -23,6 +23,7 @@ nav {
     justify-content: space-between;
     padding: 10px 20px;
     gap: 100px;
+    font-weight: 700;
 }
 
 button {
@@ -72,4 +73,9 @@ section {
     max-width: 1400px;  
 }
 
+.btnMenu {
+    background: transparent;
+    font-weight: 700;
+    font-size: medium;
+}
 
