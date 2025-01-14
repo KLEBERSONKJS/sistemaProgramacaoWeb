@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Amatic SC", serif;
+    font-weight: 700;
 }
 
 body {
@@ -12,21 +13,23 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: blueviolet;
+    background-image: url(Copy\ of\ Barber\ Shop\ Price\ Flyer\ Poster.jpg);
+
 }
 
 .container {
-    width: 420px;
-    background-color: #fff;
+    width: 380px;
+    background-color: rgba(0, 0, 0, 0.5);
+    ;
     border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 10px;
-    color: blueviolet;
+    border-radius: 20px;
+    color: #fff;
     padding: 30px 40px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .container h1 {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -35,6 +38,12 @@ body {
     width: 100%;
     height: 50px;
     width: 30px 0;
+    margin-bottom: 15px;
+}
+
+.input-box ::placeholder {
+    padding: 10px;
+    color: #fff;
 
 }
 
@@ -42,43 +51,42 @@ body {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 40px;
     outline: none;
     font-size: 16px;
-    color: #020101;
+    color: #ffffff;
     padding: 20px 45px 20px 20px;
+
 }
 
-
-.lembra-esquecer-senha {
+.mostrar-esqueci {
     display: flex;
     justify-content: space-between;
 }
 
-.lembra-esquecer-senha label input {
+
+.mostrar-esqueci label::input {
     margin: 5px;
 }
 
-.lembra-esquecer-senha a {
+.mostrar-esqueci a {
     text-decoration: none;
     color: #fff;
+
 }
 
-.lembra-esquecer-senha a:hover {
+.mostrar-esqueci a:houver {
     text-decoration: underline;
-}
-
-.input-box input::placeholder{
-    color: black;
 }
 
 button {
     padding: 10px 40px;
     display: block;
     margin: 20px auto;
-    border-radius: 30px;
     cursor: pointer;
-    background-color: blueviolet;
+    border-color: #a8a878;
+    border-radius: 15px;
+    background-color: #839074;
     color: #fff;
+    font-size: 20px;
 }
