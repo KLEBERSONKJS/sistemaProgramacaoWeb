@@ -10,10 +10,11 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(Copy\ of\ Barber\ Shop\ Price\ Flyer\ Poster.jpg);
+    background-image: url(../imagens/Copy\ of\ Barber\ Shop\ Price\ Flyer\ Poster.jpg);
 
 }
 
@@ -44,7 +45,6 @@ body {
 .input-box ::placeholder {
     padding: 10px;
     color: #fff;
-
 }
 
 .input-box input {
@@ -78,6 +78,39 @@ body {
 .mostrar-esqueci a:houver {
     text-decoration: underline;
 }
+ 
+
+.ancoraicon{
+    display: flex;
+    align-items: center;
+}
+
+.ancoraicon{
+    gap: 10px;
+}
+
+.decricao{
+    position: relative;
+    margin: 10px;
+}
+
+.icone {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+
+    
+}.rodape {
+    display: flex;             
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center;   
+    color: white;
+    padding: 20px; 
+    font-size: 15px;   
+}
+
+
 
 button {
     padding: 10px 40px;
