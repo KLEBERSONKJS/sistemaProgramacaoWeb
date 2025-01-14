@@ -53,6 +53,13 @@ select {
     padding: 10px;
 }
 
+select option {
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 section {
     padding: 15px;
 }
