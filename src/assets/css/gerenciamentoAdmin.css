@@ -7,56 +7,68 @@
 
 body{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
     background-image: url(../imagens/Copy\ of\ Barber\ Shop\ Price\ Flyer\ Poster.jpg);
+    background-size: cover;
     font-family: "Amatic SC", serif;
     font-weight: 700;
 }
 
 .dashboard{
     display: flex;
+    height: 80%;
+    width: 30%;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    margin: 5px;
-    width: 20%;
+    margin: 1%;
     border: 2px solid;
     border-radius: 10px;
     background-color: black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.home{
-    display: flex;
-    width:100%;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .item{
     padding: 15px 25px;
-    background-color:#a8a878 ;
+    background-color:#e7e4e4 ;
     border-radius: 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .item a{
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     
 }
-
+.nomeUser{
+    font-size: 25px;
+}
 .user{      
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #fff;
+    color: #ffffff;
 }
 .user img{
     width: 60px;
     width: 40px;
     object-fit: contain;
+}
+
+@media (max-width: 768px){
+    .dashboard{
+
+        width: 85%;   
+    }
+}
+
+footer p{
+    color: #ffffff;
 }
