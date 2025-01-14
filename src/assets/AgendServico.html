@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Serviço</title>
+    <link rel="stylesheet" href="css/AgendServico.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+        <h1>Agendamento de Serviço</h1>
+        <!-- Escolher barbeiro -->
+        <form>
+        <section>
+        <p>Selecionar barbeiro</p>
+        <select name="barbeiro" id="barbeiro">
+            <option value="">Selecione um barbeiro</option>
+            <option value="kleberson">Kleberson</option>
+            <option value="erick">Erick</option>
+            <option value="hildemar">Hildemar</option>
+        </select>
+        </section>
+        <!-- Escolher data -->
+        <section>
+        <p>Escolher o dia</p>
+        <input type="date" id="data" name="data">
+        </section>
+        <!-- Escolher horário -->
+        <section>
+        <p>Escolher horário</p>
+        <select name="horario" id="horario">
+            <option value="">Selecione um horário</option>
+            <option value="08:00">08:00</option>
+            <option value="09:00">09:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+        </select>
+        </section>
+        <!-- Botões -->
+        <section>
+            <div class="botões">
+                <button type="button" class="btn-cancelar" onclick="alert('FORMULÁRIO VAZIO')">Cancelar</button>
+                <button type="submit" class="btn-enviar" onclick="alert('FORMULÁRIO ENVIADO')">Agendar</button>
+            </div>
+        </section>
+        </form>
+    </div>
+    </main>
+</body>
+</html>
