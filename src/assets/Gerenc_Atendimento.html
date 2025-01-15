@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de agendamentos</title>
+    <link rel="stylesheet" href="css/Gerenc_Atendimento.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Agendamentos</h1>
+        <form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Barbeiro</th>
+                    <th>Data</th>
+                    <th>Hora</th>
+                    <th>Tipo de corte</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Junin</td>
+                    <td>Flavio</td>
+                    <td>15/01/2025</td>
+                    <td>19:00</td>
+                    <td>Degradê</td>
+                    <td>Pendente</td>
+                    <td class="acoes">
+                        <button class="btnEditar">Editar</button>
+                        <button class="btnCancelar" onclick="alert('AGENDAMENTO CANCELADO')">Cancelar</button>
+                        <button class="btnConcluir" onclick="alert('AGENDAMENTO ENVIADO')">Concluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kleberson</td>
+                    <td>Erick</td>
+                    <td>20/02/2025</td>
+                    <td>13:30</td>
+                    <td>Moicano</td>
+                    <td>Pendente</td>
+                    <td class="acoes">
+                        <button class="btnEditar">Editar</button>
+                        <button class="btnCancelar" onclick="alert('AGENDAMENTO CANCELADO')">Cancelar</button>
+                        <button class="btnConcluir" onclick="alert('AGENDAMENTO ENVIADO')">Concluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btnAdd">Adcionar</button>
+    </form>
+    </div>
+</body>
+</html>

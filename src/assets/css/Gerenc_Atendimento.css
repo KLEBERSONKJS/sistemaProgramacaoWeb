@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(../imagens/Copy\ of\ Barber\ Shop\ Price\ Flyer\ Poster.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.566);
+    border: 2px solid rgba(255, 255, 255, 0.286);
+    border-radius: 20px;
+    color: #fff;
+    padding: 70px 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 2px solid white;
+}
+
+th {
+    border: 1px solid rgba(255, 255, 255, 0.286);
+    background-color: #ffffff3e;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid rgba(255, 255, 255, 0.286);
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; 
+    margin-top: 20px; 
+}
+
+.btnEditar {
+    background-color: #839074;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.btnCancelar {
+    background-color: rgb(202, 63, 63);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.btnConcluir {
+    background-color: #839074;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.btnAdd {
+    background-color: #839074;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute; 
+    right: 40px;
+    bottom: 20px;
+}
+
+td.acoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
