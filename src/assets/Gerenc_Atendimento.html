@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/Gerenc_Atendimento.css">
 </head>
 <body>
+    <main>
     <div class="container">
         <h1>Gerenciamento de Agendamentos</h1>
         <form>
@@ -38,6 +39,19 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>Junin</td>
+                    <td>Flavio</td>
+                    <td>15/01/2025</td>
+                    <td>19:00</td>
+                    <td>Degradê</td>
+                    <td>Pendente</td>
+                    <td class="acoes">
+                        <button class="btnEditar">Editar</button>
+                        <button class="btnCancelar" onclick="alert('AGENDAMENTO CANCELADO')">Cancelar</button>
+                        <button class="btnConcluir" onclick="alert('AGENDAMENTO ENVIADO')">Concluir</button>
+                    </td>
+                </tr>
+                <tr>
                     <td>Kleberson</td>
                     <td>Erick</td>
                     <td>20/02/2025</td>
@@ -52,8 +66,12 @@
                 </tr>
             </tbody>
         </table>
-        <button class="btnAdd">Adcionar</button>
+        <div class="divAdicionar">
+            <button class="btnAdd">Adicionar</button>
+        </div>
+        
     </form>
     </div>
+  </main>
 </body>
 </html>

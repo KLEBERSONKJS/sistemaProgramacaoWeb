@@ -32,6 +32,8 @@ h1 {
     padding: 70px 40px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     position: relative;
+    max-height: 500px;
+    overflow-y: auto;
 }
 
 table {
@@ -90,14 +92,21 @@ button {
     margin: 10px;
 }
 
+.divAdicionar {
+    position: sticky;
+    bottom: -60px; 
+    right: 20px; 
+    text-align: center;
+}
+
 .btnAdd {
     background-color: #839074;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    position: absolute; 
-    right: 40px;
-    bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 td.acoes {
