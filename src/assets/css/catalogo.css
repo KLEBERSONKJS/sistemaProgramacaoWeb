@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Amatic SC", serif;
+    padding-left: 20%;
+    background-image: url(/src/assets/imagens/Copy\ of\ Barber\ Shop\ Price\ Flyer\ Poster.jpg)
+}
+
+/*.card-catalogo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #D9D9D9;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}*/
+
+.bg-catalogo {
+    width: 450px;
+    background-color: rgba(0, 0, 0, 0.579);
+    ;
+    border:2px solid rgba(255, 255, 255, 0.286);
+    border-radius: 20px;
+    color: #fff;
+    padding: 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-catalogo > h1 {
+    text-align: center;
+    color: #000000;
+    font-variant: bold;
+    font-weight: 900;
+    margin: 0;
+}
+
+.card-catalogo {
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.67);
+    border:2px solid rgba(255, 255, 255, 0.286);
+    border-radius: 20px;
+    color: #fff;
+    padding: 30px 40px;
+}
+
+img {
+    width: 20px;
+}
+
+
+
+.catalogo-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Estilo das colunas */
+.coluna {
+    width: 45%;
+    text-align: center;
+}
+
+.coluna > h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.corte {
+    margin-bottom: 20px;
+}
+
+.corte img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.corte > label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #000;
+    font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login > h1 {
+        display: none;;
+    }
+
+    .left-login {
+        padding-right: 0px;
+        padding-bottom: 15%;
+    }
+    
+    .right-login {
+        width: 1vw;
+        height: 1vh;
+    }
+    
+    .card-login {
+        font-size: small;
+        
+    }
+
+    .letf-login-image {
+        width: 5vh;
+    }
+}
