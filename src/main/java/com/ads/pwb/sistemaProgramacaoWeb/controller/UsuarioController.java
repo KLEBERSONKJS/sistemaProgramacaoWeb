@@ -24,6 +24,7 @@ public class UsuarioController {
 
     @PostMapping
     @Transactional
+    @RequestMapping("/cadastrar")
     public String cadastrarUsuario(@RequestBody DadosCadastroUsuario dadosCadastroUsuario){
         usuarioService.cadastrar(new Usuario(dadosCadastroUsuario));
         return "Usuario cadastrador";

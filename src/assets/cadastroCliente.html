@@ -11,19 +11,19 @@
 
 <body>
     <main class="container">
-        <form>
+        <form id="formCadastro">
             <button type="button" class="voltar" onclick="window.location.href='loginCliente.html'"><i class="fas fa-arrow-left"></i> </button>
 
             <h1>Cadastro Cliente</h1>
 
             <div class="input-box">
-                <input placeholder="Nome Completo" type="text">
+                <input id="nome" placeholder="Nome Completo" type="text" required>
             </div>
             <div class="input-box">
-                <input placeholder="Email" type="email">
+                <input id="email" placeholder="Email" type="email" required>
             </div>
             <div class="input-box">
-                <input placeholder="Senha" type="password">
+                <input id="senha" placeholder="Senha" type="password" required>
             </div>
             <div class="input-box">
                 <input placeholder="Confirmar Senha" type="password">
@@ -40,6 +40,29 @@
             <label>Sistema desenvolvido pela turma de Ads 2023.1</label>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('formCadastro').addEventListener('submit', function(event){
+            event.preventDefault();
+
+            const usuarioData = {
+                nome: document.getElementById('nome').value,
+                email: document.getElementById('email').value,
+                senha: document.getElementById('senha').value
+            };
+
+            fetch('http://localhost:8080/usuarios/cadastrar',{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(usuarioData),
+            })
+                .then(reponse=> reponse.text())
+                .then(data=> console.log(window.alert(data)))
+                .catch(error=> console.errpr("Erro ao cadastrar o Cliente "))
+        })
+    </script>
 </body>
 
 </html>
