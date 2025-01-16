@@ -1,0 +1,8 @@
+body {
+    background-image: url(../imagens/Copy\ of\ Barber\ Shop\ Price\ Flyer\ Poster.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
