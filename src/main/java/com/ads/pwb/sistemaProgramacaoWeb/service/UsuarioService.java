@@ -13,6 +13,9 @@ public class UsuarioService {
     @Autowired
     UsuarioRepository usuarioRepository;
 
+    @Autowired
+    EmailService emailService;
+
     public List<Usuario> listarPessoas() {
        return usuarioRepository.findAll();
 
@@ -20,6 +23,7 @@ public class UsuarioService {
 
     public Usuario cadastrar(Usuario usuario){
         usuarioRepository.save(usuario);
+        emailService.enviarEmailCadastro(usuario.getEmail(), "Novo Usuario Cadastrado", "Parabens pelo seu Cadastro em Nosso site.");
         return usuario;
     }
 
