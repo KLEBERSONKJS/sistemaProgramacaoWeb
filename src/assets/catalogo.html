@@ -13,34 +13,35 @@
         <div class="card-catalogo">
             <h1>CATÁLOGO DE CORTES</h1>
             <div class="catalogo-container">
-                <div class="corte">
+                <div class="corte" id="pezinho">
                     <img src="/src/assets/imagens/pezinho.jpg" alt="PEZINHO">
                     <label>PEZINHO - R$10,00</label>
-                    <button class="btn-agendar">AGENDAR</button>
+                    <button class="btn-agendar" onclick="agendar('pezinho')">AGENDAR</button>
                 </div>
-                <div class="corte">
+                <div class="corte" id="barba">
                     <img src="/src/assets/imagens/barba.jpg" alt="BARBA">
                     <label>BARBA - R$15,00</label>
-                    <button class="btn-agendar">AGENDAR</button>
+                    <button class="btn-agendar" onclick="agendar('barba')">AGENDAR</button>
                 </div>
-                <div class="corte">
+                <div class="corte" id="pezinhoebarba">
                     <img src="/src/assets/imagens/pezinho.jpg" alt="PEZINHO + BARBA">
                     <label>PEZINHO + BARBA - R$20,00</label>
-                    <button class="btn-agendar">AGENDAR</button>
+                    <button class="btn-agendar" onclick="agendar('pezinhoebarba')">AGENDAR</button>
                 </div>
-                <div class="corte">
+                <div class="corte" id="cabelo">
                     <img src="/src/assets/imagens/cabelo.jpg" alt="CABELO">
                     <label>CABELO - R$30,00</label>
-                    <button class="btn-agendar">AGENDAR</button>
+                    <button class="btn-agendar" onclick="agendar('cabelo')">AGENDAR</button>
                 </div>
-                <div class="corte">
+                <div class="corte" id="cabeloebarba">
                     <img src="/src/assets/imagens/cabeloebarba.jpg" alt="CABELO + BARBA">
                     <label>CABELO + BARBA - R$35,00</label>
-                    <button class="btn-agendar">AGENDAR</button>
+                    <button class="btn-agendar" onclick="agendar('cabeloebarba')">AGENDAR</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="/src/assets/js/catalogo.js"></script>
 </body>
 
 </html>
