@@ -8,8 +8,13 @@
 </head>
 <body>
     <main>
+
+
     <div class="container">
-        <h1>Gerenciamento de Agendamentos</h1>
+        <div class="divTitulo">
+            <h1>Gerenciamento de Agendamentos</h1>
+        </div>
+        <div class="tabelaRolagem">
         <form>
         <table>
             <thead>
@@ -26,39 +31,68 @@
 
             <tbody>
                 <tr>
-                    <td>Junin</td>
-                    <td>Flavio</td>
-                    <td>15/01/2025</td>
-                    <td>19:00</td>
-                    <td>Degradê</td>
-                    <td>Pendente</td>
-                    <td class="acoes">
+                    <td data-label="Cliente">Junin</td>
+                    <td data-label="Profissional">Flavio</td>
+                    <td data-label="Data">15/01/2025</td>
+                    <td data-label="Hora">19:00</td>
+                    <td data-label="Tipo de corte">Degradê</td>
+                    <td data-label="Status">Pendente</td>
+                    <td data-label="Ações" class="acoes">
                         <button class="btnEditar">Editar</button>
                         <button class="btnCancelar" onclick="alert('AGENDAMENTO CANCELADO')">Cancelar</button>
                         <button class="btnConcluir" onclick="alert('AGENDAMENTO ENVIADO')">Concluir</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Junin</td>
-                    <td>Flavio</td>
-                    <td>15/01/2025</td>
-                    <td>19:00</td>
-                    <td>Degradê</td>
-                    <td>Pendente</td>
-                    <td class="acoes">
+                    <td data-label="Cliente">Junin</td>
+                    <td data-label="Profissional">Flavio</td>
+                    <td data-label="Data">15/01/2025</td>
+                    <td data-label="Hora">19:00</td>
+                    <td data-label="Tipo de corte">Degradê</td>
+                    <td data-label="Status">Pendente</td>
+                    <td data-label="Ações" class="acoes">
                         <button class="btnEditar">Editar</button>
                         <button class="btnCancelar" onclick="alert('AGENDAMENTO CANCELADO')">Cancelar</button>
                         <button class="btnConcluir" onclick="alert('AGENDAMENTO ENVIADO')">Concluir</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Kleberson</td>
-                    <td>Erick</td>
-                    <td>20/02/2025</td>
-                    <td>13:30</td>
-                    <td>Moicano</td>
-                    <td>Pendente</td>
-                    <td class="acoes">
+                    <td data-label="Cliente">Kleberson</td>
+                    <td data-label="Profissional">Erick</td>
+                    <td data-label="Data">20/02/2025</td>
+                    <td data-label="Hora">13:30</td>
+                    <td data-label="Tipo de corte">Moicano</td>
+                    <td data-label="Status">Pendente</td>
+                    <td data-label="Ações
+                    " class="acoes">
+                        <button class="btnEditar">Editar</button>
+                        <button class="btnCancelar" onclick="alert('AGENDAMENTO CANCELADO')">Cancelar</button>
+                        <button class="btnConcluir" onclick="alert('AGENDAMENTO ENVIADO')">Concluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="Cliente">Kleberson</td>
+                    <td data-label="Profissional">Erick</td>
+                    <td data-label="Data">20/02/2025</td>
+                    <td data-label="Hora">13:30</td>
+                    <td data-label="Tipo de corte">Moicano</td>
+                    <td data-label="Status">Pendente</td>
+                    <td data-label="Ações
+                    " class="acoes">
+                        <button class="btnEditar">Editar</button>
+                        <button class="btnCancelar" onclick="alert('AGENDAMENTO CANCELADO')">Cancelar</button>
+                        <button class="btnConcluir" onclick="alert('AGENDAMENTO ENVIADO')">Concluir</button>
+                    </td>
+                </tr>         
+                <tr>
+                    <td data-label="Cliente">Kleberson</td>
+                    <td data-label="Profissional">Erick</td>
+                    <td data-label="Data">20/02/2025</td>
+                    <td data-label="Hora">13:30</td>
+                    <td data-label="Tipo de corte">Moicano</td>
+                    <td data-label="Status">Pendente</td>
+                    <td data-label="Ações
+                    " class="acoes">
                         <button class="btnEditar">Editar</button>
                         <button class="btnCancelar" onclick="alert('AGENDAMENTO CANCELADO')">Cancelar</button>
                         <button class="btnConcluir" onclick="alert('AGENDAMENTO ENVIADO')">Concluir</button>
@@ -66,6 +100,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
         <div class="divAdicionar">
             <button class="btnAdd">Adicionar</button>
         </div>

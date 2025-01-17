@@ -17,10 +17,10 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     color: white;
     text-align: center;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .container {
@@ -32,15 +32,18 @@ h1 {
     padding: 70px 40px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     position: relative;
-    max-height: 500px;
-    overflow-y: auto;
+    max-height: 700px;
+}
+
+.tabelaRolagem {
+    max-height: 400px; 
+    overflow-y: auto; 
+    border: 2px solid white; 
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
-    border: 2px solid white;
 }
 
 th {
@@ -56,6 +59,7 @@ td {
     text-align: center;
     padding: 10px;
 }
+
 
 button {
     padding: 6px 10px;
@@ -113,4 +117,52 @@ td.acoes {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    table {
+        display: block; 
+        overflow-x: auto;
+        white-space: nowrap; 
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px; 
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td:before {
+        content: attr(data-label); 
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        margin-right: 10px;
+    }
 }
