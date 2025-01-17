@@ -1,22 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
 
 body {
     margin: 0;
-    font-family: "Amatic SC", serif;
     align-content: center;
+    font-family: "Poppins", sans-serif;
     background-image: url(/src/assets/imagens/Copy\ of\ Barber\ Shop\ Price\ Flyer\ Poster.jpg);
 }
-
-/*.card-catalogo {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #D9D9D9;
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000056;
-}*/
 
 .bg-catalogo {
     width: 60%;
@@ -36,14 +26,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.card-catalogo > h1 {
-    text-align: center;
-    color: #000000;
-    font-variant: bold;
-    font-weight: 900;
-    margin: 0;
-}
-
 .card-catalogo {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.67);
@@ -55,6 +37,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.card-catalogo > h1 {
+    font-family: "Amatic SC", serif;
+    font-size: 40px;
+    font-weight: 900;
+    font-variant: bold;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    text-shadow: 1px 1px 15px #000000b9;
 }
 
 .catalogo-container {
@@ -81,11 +74,12 @@ body {
 .corte > label {
     font-size: 1rem;
     color: #000;
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 17px;
 }
 
 .btn-agendar {
+    font-family: "Poppins", sans-serif;
     background-color: #839074;
     color: white;
     border: none;
@@ -102,12 +96,20 @@ body {
 }
 
 @media only screen and (max-width: 950px) {
-    .card-login {
-        width: 85%;
+    .bg-catalogo {
+        width: 70%;
+    }
+
+    .card-catalogo {
+        height: 90%;
     }
 }
 
 @media only screen and (max-width: 600px) {
+    .bg-catalogo {
+        width: 80%;
+    }
+
     .card-catalogo {
         width: 100%;
         height: 80%;
@@ -123,7 +125,7 @@ body {
     .corte {
         display: flex;
         align-items: center;
-        justify-content: flex-start; 
+        justify-content: space-between; 
         margin-bottom: 20px;
         padding: 10px;
         border: 1px #000 solid;
@@ -131,8 +133,8 @@ body {
     }
     
     .corte > img {
-        width: 35px;
-        height: 35px;
+        width: 20px;
+        height: 20px;
         border-radius: 5px;
     }
     
@@ -141,7 +143,7 @@ body {
         font-size: 1rem;
         color: #000;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 20px;
     }
     
     .btn-agendar {
