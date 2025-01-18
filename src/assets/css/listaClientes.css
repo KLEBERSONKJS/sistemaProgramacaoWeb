@@ -9,14 +9,10 @@
 
 body {
     background-image: url(../imagens/Copy\ of\ Barber\ Shop\ Price\ Flyer\ Poster.jpg);
-    display: flex;
-}
-
-main {
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100vh;
 }
 
@@ -27,104 +23,143 @@ h1 {
     margin: 1.25rem;
 }
 
-
-
-
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0.566);
     border: 2px solid rgba(255, 255, 255, 0.286);
-    border-radius: 1.25rem;
+    border-radius: 20px;
     color: #fff;
-    padding: 4.375rem 2.5rem;
-    overflow: hidden;
+    padding: 70px 40px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
-.tabela {
-    overflow: auto;
-    max-height: 18.75rem;
+.tabelaRolagem {
+    overflow-x: hidden;
+    max-height: 400px; 
+    border: 2px solid white; 
+    position: relative;
 }
+
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 1.25rem;
-    border: 2px solid white;
 }
 
 th {
+    position: sticky;
+    top: 0;
     border: 1px solid rgba(255, 255, 255, 0.286);
-    background-color: #ffffff3e;
-    color: black;
+    background-color: black;
+    color: #fff;
     text-align: center;
-    padding: 0.625rem;
+    padding: 10px;
 }
 
 td {
     border: 1px solid rgba(255, 255, 255, 0.286);
     text-align: center;
-    padding: 0.625rem;
+    padding: 10px;
 }
+
 
 button {
-    padding: 0.375rem 0.625rem;
+    padding: 2% 2.3%;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
     display: flex;
-    justify-content: space-between;
-    gap: 0.625rem;
-    margin-top: 1.25rem;
+    justify-content: space-between; 
+    gap: 10px; 
+    margin-top: 20px; 
 }
 
-.btnEditar {
+.btnAtualizar {
     background-color: #839074;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: bold;
-    margin: 0.625rem;
+    margin: 10px;
 }
 
-.btnCancelar {
+.btnRemover {
     background-color: rgb(202, 63, 63);
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: bold;
-    margin: 0.625rem;
-}
-
-.btnConcluir {
-    background-color: #839074;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0.625rem;
+    margin: 10px;
 }
 
 .divAdicionar {
     position: sticky;
-    bottom: -3.75rem;
-    right: 1.25rem;
+    bottom: -60px; 
+    right: 20px; 
     text-align: center;
 }
 
 .btnAdd {
     background-color: #839074;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: bold;
-    padding: 0.625rem 1.25rem;
+    padding: 10px 20px;
     border-radius: 5px;
     display: inline-block;
 }
 
 td.acoes {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    table {
+        display: block; 
+        overflow-x: auto;
+        white-space: nowrap; 
+    }
+
+    
+    th, td {
+        padding: 8px;
+        font-size: 12px; 
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: left;
+    }
+
+    td:before {
+        content: attr(data-label); 
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        margin-right: 10px;
+    }
+}
