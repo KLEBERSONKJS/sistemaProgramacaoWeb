@@ -25,9 +25,9 @@ body{
     justify-content: space-between;
     padding: 20px;
     margin: 1%;
-    border: 2px solid;
-    border-radius: 10px;
-    background-color: black;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.566);
+    border: 2px solid rgba(255, 255, 255, 0.286);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -35,7 +35,8 @@ body{
 
 .item{
     padding: 15px 25px;
-    background-color:#e7e4e4 ;
+    cursor: pointer;
+    background-color: #839074;
     border-radius: 20px;
     text-align: center;
     font-size: 24px;
@@ -43,11 +44,12 @@ body{
 
 .item a{
     text-decoration: none;
-    color: #000000;
+    color: #fff;
+    
     
 }
 .nomeUser{
-    font-size: 25px;
+    font-size: 1.8rem;
 }
 .user{      
     display: flex;
