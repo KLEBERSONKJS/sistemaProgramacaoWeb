@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/pagamento.css">
+    <link rel="stylesheet" href="/src/assets/css/pagamento.css">
     <title>Pagamento</title>
 </head>
+
 <body>
-    <div>
-        <img src="src/assets/imagens/pix.png" alt="">
+    <div class="container">
+
+        <div class="partepag">
+            <h1>Escolha com deseja pagar</h1>
+
+            <div class="infopagamento">
+
+                <fieldset>
+
+                    <div class="formapagamento" id="dinheiro">
+                        <input type="radio" name="pagamento" id="dinheiro" value="dinheiro"> 
+                        <label for="dinheiro">Dinheiro</label>
+                        <img src="/src/assets/imagens/money.png" alt="dinheiro">
+                    </div>
+
+                    <div class="formapagamento" id="pix">
+                        <input type="radio" name="pagamento" id="pix" value="Pix"> 
+                        <label for="pix">Pix</label>
+                        <img src="/src/assets/imagens/pix.png" alt="pix">
+                    </div>
+
+                    <div class="formapagamento" id="cartao">
+                        <input type="radio" name="pagamento" id="cartao" value="cartao"> 
+                        <label for="cartao">Cartão de Crédito/Débito</label>
+                        <img src="/src/assets/imagens/cartao.png" alt="cartao">
+                    </div>
+
+                </fieldset>
+
+            </div>
+
+        <div>
+
+        <button class="btn-confirmacao" onclick="alert('SUCESSO!!! Forma de pagamento confirmada.')">Confirmar forma de pagamento</button>
+
     </div>
 </body>
 </html>
