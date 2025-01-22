@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/editarCortes.css">
+    <title>Editar Cortes</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="divTitulo">
+                <h1>Lista de Cortes Disponíveis</h1>
+            </div>
+            <div class="tabelaRolagem">
+                <form>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Foto</th>
+                                <th>Nome</th>
+                                <th>Preço</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Foto">
+                                    <img src="imagens/pezinho.jpg" alt="pezinho">
+                                </td>
+                                <td data-label="Nome">PEZINHO</td>
+                                <td data-label="Preço">R$10,00</td>
+                                <td data-label="Ações" class="acoes">
+                                    <button type="button" class="btnEditar">Editar</button>
+                                    <button type="button" class="btnExcluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Foto">
+                                    <img src="imagens/barba.jpg" alt="barba">
+                                </td>
+                                <td data-label="Nome">BARBA</td>
+                                <td data-label="Preço">R$15,00</td>
+                                <td data-label="Ações" class="acoes">
+                                    <button type="button" class="btnEditar">Editar</button>
+                                    <button type="button" class="btnExcluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Foto">
+                                    <img src="imagens/pezinho.jpg" alt="pezinhoebarba">
+                                </td>
+                                <td data-label="Nome">PEZINHO + BARBA</td>
+                                <td data-label="Preço">R$20,00</td>
+                                <td data-label="Ações" class="acoes">
+                                    <button type="button" class="btnEditar">Editar</button>
+                                    <button type="button" class="btnExcluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Foto">
+                                    <img src="imagens/cabelo.jpg" alt="cabelo">
+                                </td>
+                                <td data-label="Nome">CABELO</td>
+                                <td data-label="Preço">R$25,00</td>
+                                <td data-label="Ações" class="acoes">
+                                    <button type="button" class="btnEditar">Editar</button>
+                                    <button type="button" class="btnExcluir">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Foto">
+                                    <img src="imagens/cabeloebarba.jpg" alt="cabeloebarba">
+                                </td>
+                                <td data-label="Nome">CABELO + BARBA</td>
+                                <td data-label="Preço">R$30,00</td>
+                                <td data-label="Ações" class="acoes">
+                                    <button type="button" type="button" class="btnEditar">Editar</button>
+                                    <button type="button" class="btnExcluir">Excluir</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <div class="divAdicionar">
+                <button type="button" class="btnAdd" onclick="addCorte()">Adicionar</button>
+            </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/editarCortes.js"></script>
+</body>
+
+</html>

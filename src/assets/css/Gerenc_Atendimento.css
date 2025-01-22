@@ -113,6 +113,22 @@ button {
     display: inline-block;
 }
 
+.btnEditar:hover {
+    background-color: #6a755e;
+}
+
+.btnCancelar:hover {
+    background-color: #a93535;
+}
+
+.btnConcluir:hover {
+    background-color: #6a755e;
+}
+
+.btnAdd:hover {
+    background-color: #6a755e;
+}
+
 td.acoes {
     display: flex;
     justify-content: space-between;
