@@ -35,6 +35,19 @@ h1 {
     max-height: 700px;
 }
 
+.card-catalogo {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.67);
+    border:2px solid rgba(255, 255, 255, 0.286);
+    border-radius: 20px;
+    color: #fff;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .tabelaRolagem {
     max-height: 400px; 
     overflow-y: auto; 
@@ -60,6 +73,10 @@ td {
     padding: 10px;
 }
 
+img {
+    width: 50px;
+    height: 50px;
+}
 
 button {
     padding: 6px 10px;
@@ -80,16 +97,8 @@ button {
     margin: 10px;
 }
 
-.btnCancelar {
-    background-color: rgb(202, 63, 63);
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px;
-}
-
-.btnConcluir {
-    background-color: #839074;
+.btnExcluir {
+    background-color: #ca3f3f;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
@@ -117,12 +126,8 @@ button {
     background-color: #6a755e;
 }
 
-.btnCancelar:hover {
+.btnExcluir:hover {
     background-color: #a93535;
-}
-
-.btnConcluir:hover {
-    background-color: #6a755e;
 }
 
 .btnAdd:hover {
@@ -131,11 +136,11 @@ button {
 
 td.acoes {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .container {
         width: 100%;
         padding: 20px 10px;
@@ -180,5 +185,14 @@ td.acoes {
         text-transform: uppercase;
         color: #fff;
         margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
     }
 }
