@@ -26,14 +26,20 @@ public class Usuario {
     @Column
     private String email;
 
+    @Enumerated(EnumType.STRING)
+    private Status status;
+
     public Usuario(DadosCadastroUsuario dadosCadastroUsuario) {
         this.id = dadosCadastroUsuario.id();
         this.email = dadosCadastroUsuario.email();
         this.nome = dadosCadastroUsuario.nome();
         this.senha = dadosCadastroUsuario.senha();
+        this.status = Status.PENDENTE;
 
     }
 
+    public Usuario() {
+    }
 
     public String getEmail() {
         return email;
@@ -42,4 +48,13 @@ public class Usuario {
     public long getId() {
         return id;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
 }
+

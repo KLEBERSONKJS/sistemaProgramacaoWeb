@@ -148,12 +148,14 @@ td.acoes {
         background-color: rgba(255, 255, 255, 0.1);
     }
 
-    td {
+    td .acoes{
         display: flex;
         justify-content: space-between;
         padding: 10px;
         text-align: left;
     }
+    
+
 
     td:before {
         content: attr(data-label); 
