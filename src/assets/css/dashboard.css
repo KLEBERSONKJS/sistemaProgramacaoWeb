@@ -1,36 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Vinyl&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
     display: flex;
-    background-image: url(/src/assets/imagens/Copy\ of\ Barber\ Shop\ Price\ Flyer\ Poster.jpg);
+    background-image: linear-gradient(90deg, #343a40 , #06090D);
+}
+
+img {
+    width: 100%;
 }
 
 hr {
-    width: 370px;
-}
-
-.container img {
-    height: 50px;
-    width: 70px;
-    border-radius: 20%;
-    margin-left: 10px;
+    margin-top: 15px;
+    width: 100% ;
+    margin-bottom: 60px;
 }
 
 .container {
     display: flex;
-    align-items: center;  
+    align-items: center;
+}
+
+.container h1 {
+    align-items: center;
+    font-weight: 800px;
+    font-size: 30px;
+}
+
+.container img {
+    width: 30%;
+    border-radius: 20%;
+}
+
+.container-a div a {
+    font-size: 20px;
+    display: inline;
+}
+
+.container-a img {
+    width: 20%;
 }
 
 .lateral {
     background-image: linear-gradient(90deg, #343a40 , #06090D);  
     color: white;   
-    width: 25%;
-    height: 100vh;
+    width: 30%;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -44,47 +63,88 @@ hr {
 .lateral a {
     color: white;
     text-decoration: none;
-    margin: 60px 0;
+    margin: 100px 0;
     display: flex;
     align-items: center;
+    justify-items: center;
 }
 
 .lateral a:hover {
     text-decoration: underline;
 }
 
-.principal {
-    flex: 1;
+.main {
     padding: 20px;
+    align-items: center;
+    justify-items: center;
 }
 
-.cabecalho {
+.main-imagem{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.imagem {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.header {
+    width: 98%;
     background-color: rgba(255, 255, 255, 0.67);
     border:2px solid rgba(255, 255, 255, 0.286);
-    border-radius: 20px;
+    border-radius: 10px;
     color: #fff;
-    padding: 30px 40px;
-    flex-direction: column;
+    padding: 10px;
+    display: flex;
+}
+
+.header p {
+    font-size: 15px;
+    font-style: italic; 
+}
+
+.header a {
+    align-content: center;
+    padding-inline-start: 85%;
+    width: 25px;
 }
 
 .titulo {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .titulo h2 {
     font-size: 30px;
     font-weight: bold;
+    color: white;
 }
 
-.imagem{
+p {
+    color: white;
+}
 
-    margin-top: 20px;
-    width: 100px;
-    height: 100px;
+.btn-irCatalogo {
+    margin-top: 40px;
+    font-family: "Poppins", sans-serif;
+    background-color: #ff3131;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+    
+.btn-irCatalogo:hover {
+    background-color: #f61010ea;
+    height: 55px;
 }
