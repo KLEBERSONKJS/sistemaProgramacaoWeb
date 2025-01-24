@@ -10,7 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Getter
 @Entity
-@NoArgsConstructor
 public class Usuario {
 
     @Id
