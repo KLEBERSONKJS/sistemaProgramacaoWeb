@@ -8,7 +8,9 @@
 </head>
 <body>
     <main>
-        <div class="container">
+        <div class="container">   
+        <!-- Botão para voltar -->
+        <button class="btnVoltar" onclick="voltarParaDashboard()">Voltar</button> 
         <h1>Agendamento de Serviço</h1>
         <!-- Escolher barbeiro -->
         <form>
@@ -63,6 +65,11 @@
         </form>
     </div>
     </main>
+    <script>
+        function voltarParaDashboard() {
+            window.location.href = "dashboard.html";
+        }
+    </script>
     <script src="/src/assets/js/AgendServico.js"></script>
 </body>
 </html>
