@@ -11,7 +11,7 @@ body {
 .bg-catalogo {
     width: 60%;
     height: 90%;
-    background-color: rgba(0, 0, 0, 0.579);
+    background-color: rgba(0, 0, 0, 0.752);
     border: 2px solid rgba(255, 255, 255, 0.286);
     border-radius: 20px;
     color: #fff;
@@ -28,7 +28,6 @@ body {
 
 .card-catalogo {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.67);
     border:2px solid rgba(255, 255, 255, 0.286);
     border-radius: 20px;
     color: #fff;
@@ -43,9 +42,8 @@ body {
     font-family: "Amatic SC", serif;
     font-size: 40px;
     font-weight: 900;
-    font-variant: bold;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     margin: 0;
     text-shadow: 1px 1px 15px #000000b9;
 }
@@ -61,8 +59,8 @@ body {
     justify-content: space-between;
     margin-bottom: 20px;
     padding: 10px;
-    border: 1px #000 solid;
-    border-radius: 20px;
+    border: 1px #ffffff solid;
+    border-radius: 10px;
 }
 
 .corte > img {
@@ -72,7 +70,7 @@ body {
 }
 
 .corte > label {
-    color: #000;
+    color: #ffffff;
     font-weight: 500;
     font-size: 17px;
 }
@@ -80,7 +78,7 @@ body {
 .btn-agendar {
     font-family: "Poppins", sans-serif;
     background-color: #839074;
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.642);
     border: none;
     border-radius: 50px;
     height: 30px;
@@ -94,7 +92,7 @@ body {
     background-color: #6a755e;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 992px) {
     .bg-catalogo {
         width: 70%;
     }
@@ -104,7 +102,6 @@ body {
     }
 
     .corte > label {
-        color: #000;
         font-weight: 500;
         font-size: 14px;
     }
@@ -115,7 +112,6 @@ body {
         font-weight: 900;
         font-variant: bold;
         text-align: center;
-        color: #000000;
         margin: 0;
         text-shadow: 1px 1px 15px #000000b9;
     }
@@ -146,21 +142,25 @@ body {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .bg-catalogo {
-        width: 80%;
+        width: 100%;
+        padding: 0;
     }
 
     .card-catalogo {
         width: 100%;
-        height: 90%;
-        padding: 10px 20px;
+        height: 100%;
+        padding: 0px 20px;
     }
     
     .catalogo-container {
-        width: 90%;
+        width: 100%;
         height: 100%;
-        margin-top: 20px;
+    }   
+
+    h1 {
+        padding-top: 10%;
     }
 
     .corte {
@@ -170,19 +170,19 @@ body {
         margin-bottom: 20px;
         padding: 10px;
         border: 1px #000 solid;
-        border-radius: 20px;
+        border-radius: 10px;
+        height: 10%;
     }
     
     .corte > img {
-        width: 20px;
-        height: 20px;
+        width: 15%;
+        height: 80%;
         border-radius: 5px;
     }
     
     .corte > label {
-        color: #000;
         font-weight: 500;
-        font-size: 10px;
+        font-size: 12px;
     }
     
     .btn-agendar {
@@ -190,10 +190,38 @@ body {
         color: white;
         border: none;
         border-radius: 50px;
-        height: 20px;
-        cursor: pointer;
-        font-size: 5px;
+        height: 60%;
+        font-size: 8px;
         font-weight: 500;
     }
 
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    h1 {
+        padding: 3% 0 2% 0;
+    }
+
+    .catalogo-container {
+        margin: 0;
+    }
+    
+    .corte {
+        margin-bottom: 10px;
+        padding: 10px;
+        height: 5%;
+    }
+    
+    .corte > label {
+        font-size: 15px;
+    }
+    
+    .corte > img {
+        display: none;
+    }
+
+    .btn-agendar {
+        height: auto;
+    }
+    
 }
